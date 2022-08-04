@@ -128,7 +128,7 @@ Eclipse, Spring 설치
 <details> <summary style="color:white"> Tomcat Address 수정 완료 </summary>
 
 - /settingweb -> / 수정
-<br>
+
 ![Address](./img/address-settig.png)
 
 </details>

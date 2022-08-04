@@ -102,25 +102,25 @@ Eclipse, Spring 설치
 <details> <summary style="color:white"> MovieDAO, MovieService, MovieVO, HomeController 작성 완료 </summary>
 
 - Java Tree
-<br>
+
 ![JavaTree](./img/javatree-setting.png)
 
 - MovieDAO, MovieDAOlmpl 
-<br>
+
 ![DAO1](./img/dao_1.png)
 ![DAO2](./img/dao_2.png)
 
 - MovieService, MovieServicelmpl 
-<br>
+
 ![Service1](./img/service_1.png)
 ![Service2](./img/service_2.png)
 
 - HomeController
-<br>
+
 ![Home](./img/homecontroller.png)
 
 - MovieVO
-<br>
+
 ![VO](./img/vo.png)
 
 </details>

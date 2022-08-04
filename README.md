@@ -33,14 +33,13 @@ Eclipse, Spring 설치
 
 ![Tomcat](./img/tomcat-setting.png)
 
-- 기존에 설치한 Tomcat v.10.0 Server 아래에 새로 설치하였다.
 </details>
 
 <br>
 
 <details><summary style="color:skyblue"> mariadb, mysql Workbench 설치 및 샘플 DB 구축 </summary>
 
-![Tomcat](./img/mariadb-setting.png)
+![MariaDB](./img/mariadb-setting.png)
 
 </details>
 
@@ -48,18 +47,89 @@ Eclipse, Spring 설치
 
 <details><summary style="color:skyblue"> 스프링, Mariadb, MyBatis 연동, 데이터 조회 </summary>
 
-![Tomcat](./img/data-setting.png)
+![Server](./img/server-setting.png)
 
-- POM.xml 수정 완료
-- root-context.xml **에러 발생**
-- mybatis-config.xml 작성 완료
-- logback.xml 작성 완료
-- log4jdbc.log4j2.properties 작성완료
-- test.xml 작성 완료
+<details> <summary style="color:white"> POM.xml 수정 완료 </summary>
 
-- MovieDAT.java, MovieDAOlmpl.java 작성 완료
-- MovieService.java, MovieServicelmpl.java 작성완료
-- HomeController.java 작성완료
-- MovieVO.java 작성완료
-- Tomcat 세팅 변경완료
+- springframework, java version 수정
+<br>
+![Version1](./img/pom-setting_1.png)
+
+
+- mariaDB, mybatis dependency 추가
+<br>
+![Version2](./img/pom-setting_2.png)
+
+- maven-compiler-plugin version 수정
+<br>
+![Version3](./img/pom-setting_3.png)
+
+
 </details>
+<br>
+<details> <summary style="color:white"> root-context.xml 수정 완료 </summary>
+
+- xsi:schemaLocation 추가, dataSource 수정
+<br>
+![RootContext](./img/rootcontext-setting.png)
+
+</details>
+<br>
+<details> <summary style="color:white"> mybatis-config.xml, logback.xml, log4jdbc.log4j2.properties, test.xml 작성 완료 </summary>
+
+- Resource Tree 
+<br>
+![ResourceTree](./img/resourcetree-setting.png)
+
+- mybatis-config.xml 
+<br>
+![Mybatis](./img/mybatis-setting.png)
+
+- logback.xml 
+<br>
+![Logback](./img/logback-setting.png)
+
+- log4jdbc.log4j2.properties 
+<br>
+![Properties](./img/properties-setting.png)
+
+- test.xml 
+<br>
+![Test](./img/test-setting.png)
+
+</details>
+<br>
+<details> <summary style="color:white"> MovieDAO, MovieService, MovieVO, HomeController 작성 완료 </summary>
+
+- Java Tree
+<br>
+![JavaTree](./img/javatree-setting.png)
+
+- MovieDAO, MovieDAOlmpl 
+<br>
+![DAO1](./img/dao_1.png)
+![DAO2](./img/dao_2.png)
+
+- MovieService, MovieServicelmpl 
+<br>
+![Service1](./img/service_1.png)
+![Service2](./img/service_2.png)
+
+- HomeController
+<br>
+![Home](./img/homecontroller.png)
+
+- MovieVO
+<br>
+![VO](./img/vo.png)
+
+</details>
+<br>
+<details> <summary style="color:white"> Tomcat Address 수정 완료 </summary>
+
+- /settingweb -> / 수정
+<br>
+![Address](./img/address-settig.png)
+
+</details>
+

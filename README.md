@@ -52,16 +52,16 @@ Eclipse, Spring 설치
 <details> <summary style="color:white"> POM.xml 수정 완료 </summary>
 
 - springframework, java version 수정
-<br>
+
 ![Version1](./img/pom-setting_1.png)
 
 
 - mariaDB, mybatis dependency 추가
-<br>
+
 ![Version2](./img/pom-setting_2.png)
 
 - maven-compiler-plugin version 수정
-<br>
+
 ![Version3](./img/pom-setting_3.png)
 
 
@@ -70,7 +70,7 @@ Eclipse, Spring 설치
 <details> <summary style="color:white"> root-context.xml 수정 완료 </summary>
 
 - xsi:schemaLocation 추가, dataSource 수정
-<br>
+
 ![RootContext](./img/rootcontext-setting.png)
 
 </details>
@@ -78,23 +78,23 @@ Eclipse, Spring 설치
 <details> <summary style="color:white"> mybatis-config.xml, logback.xml, log4jdbc.log4j2.properties, test.xml 작성 완료 </summary>
 
 - Resource Tree 
-<br>
+
 ![ResourceTree](./img/resourcetree-setting.png)
 
 - mybatis-config.xml 
-<br>
+
 ![Mybatis](./img/mybatis-setting.png)
 
 - logback.xml 
-<br>
+
 ![Logback](./img/logback-setting.png)
 
 - log4jdbc.log4j2.properties 
-<br>
+
 ![Properties](./img/properties-setting.png)
 
 - test.xml 
-<br>
+
 ![Test](./img/test-setting.png)
 
 </details>

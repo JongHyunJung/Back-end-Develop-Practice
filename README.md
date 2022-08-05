@@ -133,3 +133,17 @@ Eclipse, Spring 설치
 
 </details>
 
+</details>
+
+<br>
+
+## 2st Assignment
+
+<br>
+
+<details> <summary style="color:skyblue"> API 문서 초안 작성 </summary>
+
+https://brian-jung.gitbook.io/api-docs/eveinformation/eveintroduction
+
+</details>
+

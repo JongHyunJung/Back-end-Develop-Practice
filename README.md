@@ -154,11 +154,23 @@ https://brian-jung.gitbook.io/api-docs/eveinformation/eveintroduction
 
 <br>
 
-스프링부트 개발 환경 설정하기
+<h3> RestController를 활용한 간단 API 구현 </h3>
+
+- RestController를 사용한 간단한 API (20년도 로그인 수)를 구현합니다.
+- 본 과정은 Spring Boot를 활용합니다.
+
+<br>
+
+<p>스프링부트 개발 환경 설정하기</p>
 
 <details> <summary style="color:skyblue"> 프로젝트 세팅 완료 </summary>
+<br>
+
+- File > New > Project > Spring Boot > Spring Starter Project를 클릭하여 프로젝트 생성합니다.
 
 ![SpringBoot0](./img/springboot-start_1.png)
+
+- API를 만들기 위함이니 Spring Boot Devtools, Spring Web, MyBatis Framework 만 선택합니다.
 
 ![SpringBoot1](./img/springboot-start_2.png)
 
@@ -169,6 +181,8 @@ https://brian-jung.gitbook.io/api-docs/eveinformation/eveintroduction
 <br>
 
 <details> <summary style="color:skyblue"> Pom.xml 수정 완료 </summary>
+
+- Dependency를 수정합니다. Dependency에는 DB 관련 내용을 포함합니다.
 
 ![BootPOM0](./img/boot-pom_1.png)
 
@@ -182,6 +196,10 @@ https://brian-jung.gitbook.io/api-docs/eveinformation/eveintroduction
 
 <details> <summary style="color:skyblue"> application.properties 수정 완료 </summary>
 
+- port, contextpath, view, db 등 각종 설정을 한 곳에서 진행합니다.
+- 설정 내용은 serverport, contextpath를 진행하였습니다.
+- suffix에 jsp를 줌으로써 /WEB-INF/views 아래에 jsp 파일을 자동으로 Mapping해주도록 합니다.
+
 ![AppPP0](./img/app-properties_1.png)
 
 ![AppPP1](./img/app-properties_2.png)
@@ -192,11 +210,21 @@ https://brian-jung.gitbook.io/api-docs/eveinformation/eveintroduction
 
 <details> <summary style="color:skyblue"> 기본 TEST </summary>
 
+- test로 호출을 하면 test.jsp로 값을 전달한 화면이 보여짐을 확인할 수 있습니다. 
+- 아래와 같이 [src > main] 아래에 webapp, views 폴더를 차례로 만들고 test.jsp를 만듭니다.
+
 ![TEST0](./img/boot-test_1.png)
 
 ![TEST1](./img/boot-test_2.png)
 
+- com.devfun.settingweb_boot.test 패키지를 만들고 settingTest.java를 만들어 아래와 같은 컨트롤러를 작성합니다.
+
 ![TEST2](./img/boot-test_3.png)
+
+- 프로젝트를 실행 후 /test를 호출해봅니다.
+- 이때 실행은 SettingwebBootApplication.java에서 실행합니다.
+- port는 application.properties에 등록되어 있습니다.
+- 최종 URL : http://localhost:8031/test
 
 ![TEST3](./img/boot-test_4.png)
 
@@ -205,6 +233,9 @@ https://brian-jung.gitbook.io/api-docs/eveinformation/eveintroduction
 <br>
 
 <details> <summary style="color:skyblue"> 통계(SW활용현황) API를 위한 DB, TABLE 생성 </summary>
+
+- mysql Workbench를 이용하여 DB, TABLE을 생성합니다.
+- 데이터는 임의로 넣어 사용합니다.
 
 ![BOOTDB0](./img/boot-db_1.png)
 ![BOOTDB3](./img/boot-db_3.png)

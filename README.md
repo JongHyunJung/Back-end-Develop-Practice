@@ -2,9 +2,7 @@
 
 ## 1st Assignment
 
-<br>
-
-Eclipse, Spring 설치
+<h3> Eclipse, Spring 설치 </h3>
 
 <details><summary style="color:skyblue"> JDK 1.8 설치 완료 </summary>
 
@@ -140,8 +138,6 @@ Eclipse, Spring 설치
 
 ## 2st Assignment
 
-<br>
-
 <details> <summary style="color:skyblue"> API 문서 초안 작성 </summary>
 
 https://brian-jung.gitbook.io/api-docs/eveinformation/eveintroduction
@@ -152,8 +148,6 @@ https://brian-jung.gitbook.io/api-docs/eveinformation/eveintroduction
 
 ## 3st Assignment
 
-<br>
-
 <h3> RestController를 활용한 간단 API 구현 </h3>
 
 - RestController를 사용한 간단한 API (20년도 로그인 수)를 구현합니다.
@@ -161,7 +155,7 @@ https://brian-jung.gitbook.io/api-docs/eveinformation/eveintroduction
 
 <br>
 
-<p>스프링부트 개발 환경 설정하기</p>
+<h3> 스프링부트 개발 환경 설정하기 </h3>
 
 <details> <summary style="color:skyblue"> 프로젝트 세팅 완료 </summary>
 <br>
@@ -304,6 +298,102 @@ https://brian-jung.gitbook.io/api-docs/eveinformation/eveintroduction
 ![BOOT7](./img/boot-settingtest.png)
 
 </details>
+
+</details>
+
+<br>
+
+## 4st Assignment
+
+<details> <summary style="color:skyblue"> 통계 API 구축 SQL문 </summary>
+
+- 연간 접속자 수
+    
+    select count(*) as totCnt
+
+	from statistic.requestinfo ri
+
+	where left(ri.createDate, 2) = #{year};
+
+- 월간 접속자 수
+    
+    select count(*) as totCnt
+
+	from statistic.requestinfo ri
+
+	where left(ri.createDate, 4) = #{month};
+- 일간 접속자 수
+
+    select count(*) as totCnt
+
+	from statistic.requestinfo ri
+
+	where left(ri.createDate, 6) = #{day};
+- 평균 하루 로그인 수
+
+    select count(*) / DAY(LAST_DAY(STR_TO_DATE(createDate, '%y%m%d%h%i'))) as avgCnt
+
+	from statistic.requestinfo ri
+
+	where left(ri.createDate,4) = #{avgday};
+- 휴일을 제외한 로그인 수
+- 부서별 월별 로그인 수
+
+</details>
+
+<br>
+
+<details> <summary style="color:skyblue"> 통계 API 파일 작성 </summary>
+
+- DAO
+    - <statisticMapper.java>
+    <br>
+    ![statisticMapper0](./img/statisticMapper_0.png)
+    - <statisticMapper.xml>
+    ![statisticMapper1](./img/statisticMapper.png)
+
+- SERVICE
+    - <statisticService.java>
+    <br>
+    ![statisticService0](./img/statisticService_0.png)
+    - <statisticService.xml>
+    <br>
+    ![statisticService1](./img/statisticService_1.png)
+
+- TEST
+    - <settingTest.java>
+    <br>
+    ![settingTest0](./img/settingTest.png)
+
+</details>
+
+<br>
+
+<details> <summary style="color:skyblue"> 통계 API 결과값 </summary>
+
+- 연간 접속자 수 결과 화면
+<br>
+![apiResult0](./img/api-result-0.png)
+
+- 월간 접속자 수 결과 화면
+<br>
+![apiResult1](./img/api-result-1.png)
+
+- 일간 접속자 수 결과 화면
+<br>
+![apiResult2](./img/api-result-2.png)
+
+- 평균 하루 로그인 수 결과 화면
+<br>
+![apiResult3](./img/api-result-3.png)
+
+</details>
+
+<br>
+
+<details> <summary style="color:skyblue"> 최종 API 문서 </summary>
+
+https://brian-jung.gitbook.io/api-docs/eveinformation/eveintroduction
 
 </details>
 

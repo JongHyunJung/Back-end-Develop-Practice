@@ -1,4 +1,4 @@
-# Back-end-Develop-Practice
+# COMMENTO 백엔드 개발 실무
 
 ## 1st Assignment
 
@@ -396,7 +396,7 @@ https://brian-jung.gitbook.io/api-docs/eveinformation/eveintroduction
 
 <details> <summary style="color:skyblue"> 최종 API 문서 </summary>
 
-https://brian-jung.gitbook.io/api-docs/eveinformation/eveintroduction
+https://brian-jung.gitbook.io/comment-api/api-intro/api
 
 </details>
 

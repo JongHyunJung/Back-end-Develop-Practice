@@ -348,8 +348,6 @@ https://brian-jung.gitbook.io/api-docs/eveinformation/eveintroduction
 - DAO
     - <statisticMapper.java>
     
-    <br>
-    
     ![statisticMapper0](./img/statisticMapper_0.png)
     
     - <statisticMapper.xml>
@@ -359,20 +357,14 @@ https://brian-jung.gitbook.io/api-docs/eveinformation/eveintroduction
 - SERVICE
     - <statisticService.java>
     
-    <br>
-    
     ![statisticService0](./img/statisticService_0.png)
     
     - <statisticService.xml>
-    
-    <br>
     
     ![statisticService1](./img/statisticService_1.png)
 
 - TEST
     - <settingTest.java>
-    
-    <br>
     
     ![settingTest0](./img/settingTest.png)
 
@@ -384,25 +376,17 @@ https://brian-jung.gitbook.io/api-docs/eveinformation/eveintroduction
 
 - 연간 접속자 수 결과 화면
 
-<br>
-
 ![apiResult0](./img/api-result-0.png)
 
 - 월간 접속자 수 결과 화면
-
-<br>
 
 ![apiResult1](./img/api-result-1.png)
 
 - 일간 접속자 수 결과 화면
 
-<br>
-
 ![apiResult2](./img/api-result-2.png)
 
 - 평균 하루 로그인 수 결과 화면
-
-<br>
 
 ![apiResult3](./img/api-result-3.png)
 
